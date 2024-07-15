@@ -45,7 +45,7 @@ body {
 }
 
 main {
-  @include flex-center;
+  @include flex-start;
   flex-direction: column;
   background-color: $white;
   padding: 1.25rem;
@@ -56,7 +56,7 @@ main {
 
   p,
   h1,
-  h2 {
+  span {
     margin: 0.625rem 0;
   }
 
@@ -67,14 +67,16 @@ main {
     border-radius: 10px;
   }
 
-  #label h2 {
+  #label .label-text {
     @include flex-center;
     background-color: $primary-color;
     border-radius: 5px;
     padding: 0.2rem;
     width: 6rem;
     font-size: 1rem;
-    font-weight: 700; // Ensure the font weight is applied
+    font-weight: 700;
+    display: block;
+    text-align: center;
   }
 
   h1 {
@@ -82,12 +84,10 @@ main {
     font-weight: 700;
   }
 
-  #description {
-    p {
-      color: $black;
-      opacity: 0.2;
-      font-size: 1rem;
-    }
+  .description {
+    color: $black;
+    opacity: 0.8;
+    font-size: 1rem;
   }
 
   #author {
@@ -100,9 +100,16 @@ main {
       width: 2rem;
       margin-right: 0.625rem;
     }
+
+    .author-name {
+      font-weight: 700;
+    }
+  }
+
+  .date {
+    color: $grey;
   }
 }
-
 
 @media (max-width: 375px) {
   html {

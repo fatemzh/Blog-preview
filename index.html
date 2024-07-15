@@ -1,46 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Frontend Mentor | Blog preview card</title>
-  </head>
-  <body>
-    <main>
-      <div id="img">
-        <img src="./assets/images/illustration-article.svg" alt="" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Blog preview card</title>
+</head>
+<body>
+  <main id="main-content">
+    <div id="img">
+      <img src="./assets/images/illustration-article.svg" alt="Illustration of the article">
+    </div>
+    <div id="label">
+      <span class="label-text">Learning</span>
+    </div>
+    <div id="text-content">
+      <p class="date">Published 21 Dec 2023</p>
+      <h1>HTML & CSS foundations</h1>
+      <p class="description">
+        These languages are the backbone of every website, defining structure,
+        content, and presentation.
+      </p>
+      <div id="author">
+        <img src="./assets/images/image-avatar.webp" alt="Picture of the author of this blog post">
+        <span class="author-name">Greg Hooper</span>
       </div>
-      <div id="label">
-        <h2>Learning</h2>
-      </div>
-      <div id="text-content">
-        <p>Published 21 Dec 2023</p>
-        <h1>HTML & CSS foundations</h1>
-        <p id="description">
-          These languages are the backbone of every website, defining structure,
-          content, and presentation.
-        </p>
-        <div id="author">
-          <img
-            src="./assets/images/image-avatar.webp"
-            alt="Picture of the author of this blog post"
-          />
-          <h3>Greg Hooper</h3>
-        </div>
-      </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
 </html>
