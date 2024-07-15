@@ -41,6 +41,18 @@ body {
   border: 1px solid $black;
   box-shadow: 7px 7px $black;
   overflow: hidden;
+
+  #label, #author{
+    cursor: pointer !important;
+  }
+
+  #label-text:hover{
+    color: white;
+  }
+
+  #author-name:hover{
+    color: rgb(31, 139, 31);
+  }
 }
 
 .thumbnail {

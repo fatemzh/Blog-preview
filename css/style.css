@@ -31,6 +31,15 @@ body {
   box-shadow: 7px 7px hsl(0, 0%, 7%);
   overflow: hidden;
 }
+.container #label, .container #author {
+  cursor: pointer !important;
+}
+.container #label-text:hover {
+  color: white;
+}
+.container #author-name:hover {
+  color: rgb(31, 139, 31);
+}
 
 .thumbnail {
   margin-bottom: 10px;
