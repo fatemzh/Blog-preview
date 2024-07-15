@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap');
+
+// Variables
+$white: hsl(0, 0%, 100%);
+$grey: hsl(0, 0%, 50%);
+$black: hsl(0, 0%, 7%);
+$font-size: 16px;
+$primary-color: #f5d04e;
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+
+// Mixins
+@mixin flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Base Styles
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Figtree', sans-serif;
+}
+
+html {
+  font-size: 90%;
+}
+
+body {
+  font-size: 100%;
+  font-family: 'Figtree', sans-serif;
+  background-color: $primary-color;
+  @include flex-center;
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  @include flex-center;
+  flex-direction: column;
+  background-color: $white;
+  padding: 1.25rem;
+  border-radius: 10px;
+  width: 23.125rem;
+  box-shadow: 0.625rem 0.625rem 0 0.0625rem $black;
+  border: 0.0625rem solid $black;
+
+  p,
+  h1,
+  h2 {
+    margin: 0.625rem 0;
+  }
+
+  #img img {
+    display: block;
+    margin: 0 auto;
+    width: 20.625rem;
+    border-radius: 10px;
+  }
+
+  #label h2 {
+    @include flex-center;
+    background-color: $primary-color;
+    border-radius: 5px;
+    padding: 0.2rem;
+    width: 6rem;
+    font-size: 1rem;
+    font-weight: 700; // Ensure the font weight is applied
+  }
+
+  h1 {
+    font-size: 1.625rem;
+    font-weight: 700;
+  }
+
+  #description {
+    p {
+      color: $black;
+      opacity: 0.2;
+      font-size: 1rem;
+    }
+  }
+
+  #author {
+    display: flex;
+    align-items: center;
+    margin-top: 1.25rem;
+    font-size: 1rem;
+
+    img {
+      width: 2rem;
+      margin-right: 0.625rem;
+    }
+  }
+}
+
+
+@media (max-width: 375px) {
+  html {
+    font-size: 80%;
+  }
+
+  main {
+    width: 310px;
+    margin: 30px;
+
+    #img img {
+      width: 270px;
+    }
+  }
+}
