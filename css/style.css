@@ -9,107 +9,88 @@
 }
 
 html {
-  font-size: 90%;
+  font-size: 100%;
 }
 
 body {
-  font-size: 100%;
-  font-family: "Figtree", sans-serif;
-  background-color: #f5d04e;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: hsl(47, 88%, 63%);
   height: 100vh;
   margin: 0;
 }
 
-main {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
+.container {
   background-color: hsl(0, 0%, 100%);
-  padding: 1.25rem;
-  border-radius: 10px;
-  width: 23.125rem;
-  box-shadow: 0.625rem 0.625rem 0 0.0625rem hsl(0, 0%, 7%);
-  border: 0.0625rem solid hsl(0, 0%, 7%);
-}
-main p,
-main h1,
-main span {
-  margin: 0.6rem 0;
-}
-main #img img {
-  display: block;
-  margin: 0 auto;
-  width: 20.6rem;
-  border-radius: 10px;
-}
-main #label #label-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f5d04e;
-  border-radius: 5px;
-  padding: 0.2rem;
-  width: 6rem;
-  font-size: 1rem;
-  font-weight: 700;
-  display: block;
-  text-align: center;
-}
-main h1 {
-  font-size: 1.6rem;
-  font-weight: 700;
-}
-main h1,
-main #label-text,
-main #author {
-  cursor: pointer;
-}
-main h1:hover {
-  color: #f5d04e;
-}
-main #label-text:hover {
-  color: white;
-}
-main #author-name:hover {
-  color: #05ba32;
-}
-main #description {
-  color: hsl(0, 0%, 7%);
-  opacity: 0.8;
-  font-size: 1rem;
-}
-main #author {
-  display: flex;
-  align-items: center;
-  margin-top: 1.25rem;
-  font-size: 1rem;
-}
-main #author img {
-  width: 2rem;
-}
-main #author #author-name {
-  font-weight: 700;
-  margin-left: 10px;
-}
-main #date {
-  color: hsl(0, 0%, 50%);
+  padding: 20px;
+  width: 90%;
+  max-width: 330px;
+  border-radius: 15px;
+  border: 1px solid hsl(0, 0%, 7%);
+  box-shadow: 7px 7px hsl(0, 0%, 7%);
+  overflow: hidden;
 }
 
-@media (max-width: 375px) {
-  html {
-    font-size: 80%;
-  }
-  main {
-    width: 310px;
-    margin: 30px;
-  }
-  main #img img {
-    width: 270px;
-  }
+.thumbnail {
+  margin-bottom: 10px;
+}
+.thumbnail img {
+  width: 100%;
+  border-radius: 15px;
+  height: auto;
+}
+
+.category {
+  display: inline-block;
+  color: black;
+  background: hsl(47, 88%, 63%);
+  padding: 5px;
+  border-radius: 8px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+.date {
+  color: hsl(0, 0%, 7%);
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.content {
+  text-align: justify;
+}
+.content #head {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.content #description {
+  margin-bottom: 10px;
+  color: hsl(0, 0%, 50%);
+  font-size: 0.9rem;
+}
+
+#head:hover {
+  color: hsl(47, 88%, 63%);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+.author img {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+.author .name {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
