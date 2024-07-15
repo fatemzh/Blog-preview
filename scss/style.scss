@@ -57,17 +57,17 @@ main {
   p,
   h1,
   span {
-    margin: 0.625rem 0;
+    margin: 0.6rem 0;
   }
 
   #img img {
     display: block;
     margin: 0 auto;
-    width: 20.625rem;
+    width: 20.6rem;
     border-radius: 10px;
   }
 
-  #label .label-text {
+  #label #label-text {
     @include flex-center;
     background-color: $primary-color;
     border-radius: 5px;
@@ -80,11 +80,29 @@ main {
   }
 
   h1 {
-    font-size: 1.625rem;
+    font-size: 1.6rem;
     font-weight: 700;
   }
 
-  .description {
+  h1,
+  #label-text,
+  #author {
+    cursor: pointer;
+  }
+
+  h1:hover {
+    color: #f5d04e;
+  }
+
+  #label-text:hover{
+    color: white;
+  }
+
+  #author-name:hover{
+    color: #05ba32;
+  }
+
+  #description {
     color: $black;
     opacity: 0.8;
     font-size: 1rem;
@@ -98,15 +116,15 @@ main {
 
     img {
       width: 2rem;
-      margin-right: 0.625rem;
     }
 
-    .author-name {
+    #author-name {
       font-weight: 700;
+      margin-left: 10px;
     }
   }
 
-  .date {
+  #date {
     color: $grey;
   }
 }
